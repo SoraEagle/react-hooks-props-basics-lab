@@ -7,12 +7,12 @@ import About from "./About";
 import user from "../data/user";
 console.log(user);
 
-function App() {
+function App(){
   return (
     <div>
       <NavBar />
-      <Home username={user.name} city={user.city} />
-      <About bio="I am a Web Developer" github="https://github.com/liza" linkedin="https://www.linkedin.com/in/liza/" />
+      <Home username={user.name} city={user.city} color={user.color} />
+      <About bio={user.bio} links={user.links} />
     </div>
   );
 }
